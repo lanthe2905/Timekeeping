@@ -1,0 +1,76 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.timeline-wrapper {
+  display: flex;
+}
+
+/* resize */
+.resize {
+  position: relative;
+}
+
+.resize::after {
+  content: " ";
+  position: absolute;
+  cursor: col-resize;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  outline: 1px solid red;
+}
+
+/* end resize */
+.fc-timeline-table th,
+.fc-timeline-table td {
+  width: 32px;
+  height: 32px;
+}
+
+.fc-timeline-table table,
+.fc-timeline-table th,
+.fc-timeline-table td,
+.fc-resource-table table,
+.fc-resource-table th,
+.fc-resource-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.fc-resource-table {
+  background-color: #f0f0f0;
+  overflow-x: auto;
+  min-width: 300px;
+}
+
+.fc-resource-table table {
+  width: 300px;
+  table-layout: fixed;
+}
+
+.fc-resource-table th,
+.fc-resource-table td {
+  width: 32px;
+  height: 32px;
+}
+
+
+/* Time line table */
+.fc-timeline-table {
+  width: 100%;
+  overflow-x: auto;
+}
+.fc-timeline-table > table {
+  width: 100%;
+  table-layout: fixed;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
